@@ -18,6 +18,6 @@ This project is developed using the following technologies and tools:
 
 Members:
 
-Jefferson Naranjo Rodriguez
-Elkin Daza
-Daniel Estiven Villegas Bedoya
+Jefferson Naranjo Rodriguez,
+Elkin Daza,
+Daniel Estiven Villegas Bedoya.
