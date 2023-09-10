@@ -39,6 +39,9 @@ public class ReservationEntity {
     @JoinColumn(name = "flight_id")
     private FlightEntity flight;
 
+    public ReservationEntity() {
+    }
+
     public ReservationEntity(String code, String flightCode, LocalDateTime reservationDate, int seatNumber, String passengerFirstName, String passengerLastName, String state, UserEntity client, FlightEntity flight) {
         this.code = code;
         this.flightCode = flightCode;
@@ -48,6 +51,86 @@ public class ReservationEntity {
         this.passengerLastName = passengerLastName;
         this.state = state;
         this.client = client;
+        this.flight = flight;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
+    }
+
+    public String getFlightCode() {
+        return flightCode;
+    }
+
+    public void setFlightCode(String flightCode) {
+        this.flightCode = flightCode;
+    }
+
+    public LocalDateTime getReservationDate() {
+        return reservationDate;
+    }
+
+    public void setReservationDate(LocalDateTime reservationDate) {
+        this.reservationDate = reservationDate;
+    }
+
+    public int getSeatNumber() {
+        return seatNumber;
+    }
+
+    public void setSeatNumber(int seatNumber) {
+        this.seatNumber = seatNumber;
+    }
+
+    public String getPassengerFirstName() {
+        return passengerFirstName;
+    }
+
+    public void setPassengerFirstName(String passengerFirstName) {
+        this.passengerFirstName = passengerFirstName;
+    }
+
+    public String getPassengerLastName() {
+        return passengerLastName;
+    }
+
+    public void setPassengerLastName(String passengerLastName) {
+        this.passengerLastName = passengerLastName;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public UserEntity getClient() {
+        return client;
+    }
+
+    public void setClient(UserEntity client) {
+        this.client = client;
+    }
+
+    public FlightEntity getFlight() {
+        return flight;
+    }
+
+    public void setFlight(FlightEntity flight) {
         this.flight = flight;
     }
 }
